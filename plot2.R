@@ -7,7 +7,7 @@
 png("plot2.png", width = 480, height = 480)
 
 ## create line graph of Global Active Power by Date/Time
-plot(x = (data$Date + data$Time), as.numeric(data$Global_active_power), 
+plot(x = (data$Date + data$Time), as.numeric(as.character(data$Global_active_power)), 
      type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
 ## save graph to png
